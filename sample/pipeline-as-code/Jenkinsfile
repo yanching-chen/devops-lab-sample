@@ -1,6 +1,6 @@
 node {
     stage('init'){
-        checkout scm
+        git 'https://github.com/yanching-chen/devops-lab-sample.git'
     }
     stage('build'){
         sh 'cd sample/pipeline-as-code && mvn package'
